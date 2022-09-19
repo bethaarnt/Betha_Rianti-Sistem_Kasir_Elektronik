@@ -25,3 +25,14 @@ WHILE "order" is TRUE
     ELSE
         PRINT "Kode barang elektronik yang anda masukan salah"
     END IF
+
+
+    READ AND WRITE "order_again" with STRING
+
+    IF "order_again" EQUAL "YES"
+        STORE "order" with TRUE
+    ELSE IF "order_again" EQUAL "NO"
+        STORE "order" with FALSE
+    END IF
+
+END WHILE
