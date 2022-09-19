@@ -12,3 +12,16 @@ WHILE "order" is TRUE
 
     READ AND WRITE "item_code" with STRING
     READ AND WRITE "quantity" with NUMBER
+
+    IF item_code EQUAL "AS01"
+        STORE "price" with 99000
+        STORE "total_payment" with CALCULATE "total_payment" PLUS ("price" multiply by "quantity")
+    ELSE IF item_code EQUAL "SG04"
+        STORE "price" with 139000
+        STORE "total_payment" with CALCULATE "total_payment" PLUS ("price" multiply by "quantity")
+    ELSE IF item_code EQUAL "AP09"
+        STORE "price" with 199000
+        STORE "total_payment" with CALCULATE "total_payment" PLUS ("price" multiply by "quantity")
+    ELSE
+        PRINT "Kode barang elektronik yang anda masukan salah"
+    END IF
