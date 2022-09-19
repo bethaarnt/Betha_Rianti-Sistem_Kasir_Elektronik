@@ -1,0 +1,14 @@
+Program Sistem_Kasir_Elektronik_App
+
+START PROGRAM
+
+STORE "order" AS BOOLEAN with TRUE
+STORE "total_payment" AS NUMBER with 0
+
+
+WHILE "order" is TRUE
+
+    DISPLAY "List Elektronic Devices"
+
+    READ AND WRITE "item_code" with STRING
+    READ AND WRITE "quantity" with NUMBER
